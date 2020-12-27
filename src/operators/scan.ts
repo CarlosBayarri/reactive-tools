@@ -1,4 +1,5 @@
-import { userInfo } from "os";
+
+// Similar al reduce
 import { from, interval } from "rxjs";
 import { map, reduce, scan, take, tap } from "rxjs/operators";
 
