@@ -42,15 +42,14 @@ import { zip, of } from 'rxjs';
 (() =>{
 
     // No tocar ========================================================
-    const SW_API = 'https://swapi.co/api';                     
+    const SW_API = 'https://swapi.dev/api';                     
     const getRequest = ( url: string ) => ajax.getJSON<any>(url);
     // ==================================================================
 
     // Realizar el llamado al URL para obtener a Luke Skywalker
-    getRequest(`${SW_API}/people/1`).pipe(
+    getRequest(`Aquí va un URL`).pipe(
         // Realizar los operadores respectivos aquí
-        switchMap(response => zip(of(response), getRequest(response.species[0]))),
-        map( ([personaje, especie]) => ({ personaje, especie }))
+        
 
 
         
